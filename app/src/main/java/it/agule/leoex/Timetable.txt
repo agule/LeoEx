@@ -1,0 +1,203 @@
+Fiumicino Aeroporto --> Roma
+----------------------------
+Departure   From:               Arrival To:             Duration    Train   Train#  Cost,€  1st class
+  05:57     Fiumicino Aeroporto  06:45  Roma Tiburtina	 00:48	     Reg    22001   8,00    -
+  06:23     Fiumicino Aeroporto	 06:55  Roma Termini	 00:32      LeoEx   3231    14,00   -
+  06:27     Fiumicino Aeroporto	 07:15  Roma Tiburtina   00:48       Reg    22003   8,00    -
+  06:42     Fiumicino Aeroporto	 07:30  Roma Tiburtina   00:48       Reg    22005   8,00    -
+  06:53     Fiumicino Aeroporto	 07:25  Roma Termini     00:32      LeoEx   3235    14,00   -
+  06:57     Fiumicino Aeroporto  07:45  Roma Tiburtina   00:48       Reg    22007   8,00    -
+  07:12     Fiumicino Aeroporto  08:00  Roma Tiburtina   00:48       Reg    22009   8,00    -
+  07:23     Fiumicino Aeroporto  07:55  Roma Termini     00:32      LeoEx   3239    14,00   -
+  07:27     Fiumicino Aeroporto  08:15  Roma Tiburtina   00:48       Reg    22011   8,00    -
+  07:42     Fiumicino Aeroporto  08:30  Roma Tiburtina   00:48       Reg    22013   8,00    -
+  07:53     Fiumicino Aeroporto  08:25  Roma Termini     00:32      LeoEx   3243    14,00   -
+  07:57     Fiumicino Aeroporto  08:45  Roma Tiburtina   00:48       Reg    22015   8,00    -
+  08:12     Fiumicino Aeroporto  09:00  Roma Tiburtina   00:48       Reg    22017   8,00    -
+  08:23     Fiumicino Aeroporto  08:55  Roma Termini     00:32      LeoEx   3247    14,00   -
+  08:27     Fiumicino Aeroporto  09:15  Roma Tiburtina   00:48       Reg    22019   8,00    -
+  08:42     Fiumicino Aeroporto  09:30  Roma Tiburtina   00:48       Reg    22021   8,00    -
+  08:53     Fiumicino Aeroporto  09:25  Roma Termini     00:32      LeoEx   3251    14,00   -
+  08:57     Fiumicino Aeroporto  09:45  Roma Tiburtina   00:48       Reg    22023   8,00    -
+...
+Recupera tabella prezzi
+Soluzione 9
+Partenza
+09:12 Fiumicino Aeroporto	Arrivo
+10:00 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22025 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 10
+Partenza
+09:23 Fiumicino Aeroporto	Arrivo
+09:55 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3255 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+
+Partenza
+09:27 Fiumicino Aeroporto	Arrivo
+10:15 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22027 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 2
+Partenza
+09:38 Fiumicino Aeroporto	Arrivo
+10:10 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3257 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+Soluzione 3
+Partenza
+09:42 Fiumicino Aeroporto	Arrivo
+10:30 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22029 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 4
+Partenza
+09:53 Fiumicino Aeroporto	Arrivo
+10:25 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3259 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+Soluzione 5
+Partenza
+09:57 Fiumicino Aeroporto	Arrivo
+10:45 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22031 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 6
+Partenza
+10:12 Fiumicino Aeroporto	Arrivo
+11:00 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22033 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 7
+Partenza
+10:23 Fiumicino Aeroporto	Arrivo
+10:55 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3263 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+Soluzione 8
+Partenza
+10:27 Fiumicino Aeroporto	Arrivo
+11:15 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22035 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 9
+Partenza
+10:42 Fiumicino Aeroporto	Arrivo
+11:30 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22037 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 10
+Partenza
+10:53 Fiumicino Aeroporto	Arrivo
+11:25 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3267 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+
+Partenza
+10:57 Fiumicino Aeroporto	Arrivo
+11:45 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22039 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 2
+Partenza
+11:08 Fiumicino Aeroporto	Arrivo
+11:40 Roma Termini	Durata
+00:32
+Treno	Frecciargento
+9491 Offerta	Base	Prezzo a partire da 18,00 €  21,00 €
+Recupera tabella prezzi
+Soluzione 3
+Partenza
+11:12 Fiumicino Aeroporto	Arrivo
+12:00 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22041 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 4
+Partenza
+11:23 Fiumicino Aeroporto	Arrivo
+11:55 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3271 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+Soluzione 5
+Partenza
+11:27 Fiumicino Aeroporto	Arrivo
+12:15 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22043 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 6
+Partenza
+11:38 Fiumicino Aeroporto	Arrivo
+12:10 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3273 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+Soluzione 7
+Partenza
+11:42 Fiumicino Aeroporto	Arrivo
+12:30 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22045 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 8
+Partenza
+11:53 Fiumicino Aeroporto	Arrivo
+12:25 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3275 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+Soluzione 9
+Partenza
+11:57 Fiumicino Aeroporto	Arrivo
+12:45 Roma Tiburtina	Durata
+00:48
+Treno	Regionale
+22047 Offerta	Ordinaria	Prezzo a partire da 8,00 €
+Recupera tabella prezzi
+Soluzione 10
+Partenza
+12:08 Fiumicino Aeroporto	Arrivo
+12:40 Roma Termini	Durata
+00:32
+Treno	Leonardo Express
+3277 Offerta	Ordinaria	Prezzo a partire da 14,00 €
+Recupera tabella prezzi
+...
+
+
+
