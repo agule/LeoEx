@@ -70,15 +70,14 @@ class TimetableItem{
 public class Timetable{     // public interface class
     private TimetableData timetableData = null;
 
-    Timetable(){
-        timetableData = new TimetableData();
-    }
+    Timetable(){    timetableData = new TimetableData();    }
 
     String[] getTimetableStrings() {
-        String[] stringsArray = new String[timetableData.cntToRome];
+        String[] stringsArray = new String[timetableData.cntToRome+1];
         for(int i = 0; i < timetableData.cntToRome; i++){
             stringsArray[i] = timetableData.itemsToRome[i].toString();
         }
+        stringsArray[timetableData.cntToRome] = "R22011";
         return stringsArray;
     }
 
