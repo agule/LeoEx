@@ -45,7 +45,7 @@ class TimetableItem{
     private int     ticketCost;
     private int     ticket1stClass;
     TimetableItem(String departure, String arrival, EndStation endStation, String tripDuration,
-                  TrainType trainType, int trainNumber, int ticketCost, int ticket1stClass){ this.direction = direction;
+                  TrainType trainType, int trainNumber, int ticketCost, int ticket1stClass){
         this.departure=departure; this.arrival=arrival; this.endStation=endStation; this.tripDuration=tripDuration;
         this.trainType=trainType; this.trainNumber=trainNumber; this.ticketCost=ticketCost; this.ticket1stClass=ticket1stClass;
     }
@@ -59,7 +59,10 @@ class TimetableItem{
         else if(Direction.RomeToFCO==direction)
             str+= endStation.Name()+" → "+EndStation.FCOapt.Name();
         str+=" ("+arrival+") ";
-        str+=" ["+String.valueOf(ticketCost)+"€]";
+        str+=" ["+String.valueOf(ticketCost)+"€";
+        if(ticket1stClass>0)
+            str+="/"+String.valueOf(ticket1stClass)+"€";
+        str+="]";
         return str;
     }
 }
