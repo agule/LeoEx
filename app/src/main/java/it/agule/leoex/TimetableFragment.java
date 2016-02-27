@@ -27,23 +27,8 @@ public class TimetableFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         ListView listView = (ListView) rootView.findViewById(R.id.listview_timetable);
-
-        String[] timetableArray = { // some pre-produced list items...
-                "05:57 ✈Fiumicino → Roma Tiburtina (06:45) R22001 [8€]",
-                "06:23 ✈Fiumicino → Roma Termini (06:55) LE3231 [14€]",
-                "06:27 ✈Fiumicino → Roma Tiburtina (07:15) R22003 [8€]",
-                "06:42 ✈Fiumicino → Roma Tiburtina (07:30) R22005 [8€]",
-                "06:53 ✈Fiumicino → Roma Termini (07:25) LE3235 [14€]",
-                "06:57 ✈Fiumicino → Roma Tiburtina (07:45) R22007 [8€]",
-                "07:12 ✈Fiumicino → Roma Tiburtina (08:00) R22009 [8€]",
-                "07:23 ✈Fiumicino → Roma Termini (07:55) LE3239 [14€]",
-                "07:27 ✈Fiumicino → Roma Tiburtina (08:15) R22011 [8€]",
-                "07:42 ✈Fiumicino → Roma Tiburtina (08:30) R22013 [8€]",
-                "07:53 ✈Fiumicino → Roma Termini (07:85) LE3243 [14€]",
-                "07:57 ✈Fiumicino → Roma Tiburtina (08:45) R22015 [8€]",
-        };
-
-        List<String> strListData = new ArrayList<String>(Arrays.asList(timetableArray));
+        Timetable timetable = new Timetable();
+        List<String> strListData = new ArrayList<String>(Arrays.asList(timetable.getTimetableStrings()));
         mTimetableAdapter = new ArrayAdapter<String>(getActivity(),
                 R.layout.timetable_item, R.id.list_item_timetable, strListData);
         listView.setAdapter(mTimetableAdapter);
