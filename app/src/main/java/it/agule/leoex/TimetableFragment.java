@@ -1,5 +1,6 @@
 package it.agule.leoex;
 
+import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,6 +25,8 @@ public class TimetableFragment extends Fragment {
     private ArrayAdapter<String> mTimetableAdapter;
     private ListView mListViewTimetable;
 
+    Timetable mTimetable = new Timetable();
+
     public TimetableFragment() {
     }
 
@@ -47,7 +50,10 @@ public class TimetableFragment extends Fragment {
         int id = item.getItemId();
         if (id == R.id.action_scroll) {
             if(mListViewTimetable!=null)
-                mListViewTimetable.smoothScrollToPosition(mTimetableAdapter.getPosition("R22011"));
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+                    mListViewTimetable.smoothScrollToPositionFromTop(mTimetable.getItemBeforeNow(), 10);
+                else    // older functions only ensures item is visible, but may be at bottom
+                    mListViewTimetable.smoothScrollToPosition(mTimetable.getItemBeforeNow());
         }
         return super.onOptionsItemSelected(item);
     }
@@ -65,8 +71,7 @@ public class TimetableFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         mListViewTimetable = (ListView) rootView.findViewById(R.id.listview_timetable);
-        Timetable timetable = new Timetable();
-        List<String> strListData = new ArrayList<String>(Arrays.asList(timetable.getTimetableStrings()));
+        List<String> strListData = new ArrayList<String>(Arrays.asList(mTimetable.getTimetableStrings()));
         mTimetableAdapter = new ArrayAdapter<String>(getActivity(),
                 R.layout.timetable_item, R.id.list_item_timetable, strListData);
         mListViewTimetable.setAdapter(mTimetableAdapter);
