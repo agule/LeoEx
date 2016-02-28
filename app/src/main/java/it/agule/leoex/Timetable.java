@@ -1,6 +1,12 @@
 package it.agule.leoex;
 
+import java.text.DateFormat;
 import android.text.format.Time;
+import android.util.Log;
+
+import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
 
 /**
  * Actual Timetable data and related types defined here
@@ -35,6 +41,7 @@ enum TrainType{
 }
 
 class TimetableItem{
+    private final String TAG = TimetableItem.class.getSimpleName();
     private Direction direction;
     private String  departure;
     private String  arrival;
@@ -68,6 +75,7 @@ class TimetableItem{
 }
 
 public class Timetable{     // public interface class
+    private final String TAG = Timetable.class.getSimpleName();
     private TimetableData timetableData = null;
 
     Timetable(){    timetableData = new TimetableData();    }
@@ -87,6 +95,7 @@ public class Timetable{     // public interface class
 }
 
 class TimetableData {
+    private final String TAG = TimetableData.class.getSimpleName();
     static TimetableItem[] itemsToRome = {   // Direction.FCOToRome
             new TimetableItem("05:57", "06:45", EndStation.RomaTib, "00:48", TrainType.Reg, 22001, 8, 0),
             new TimetableItem("06:23", "06:55", EndStation.RomaTer, "00:32", TrainType.LE, 3231, 14, 0),
@@ -151,8 +160,36 @@ class TimetableData {
             new TimetableItem("08:05", "08:37", EndStation.RomaTer, "00:32", TrainType.LE, 3250, 14, 0)
     };
     int cntToFCO = 0;
+    static Time today = null;
+    int mTimezoneOffsetSec = 0;
 
-    TimetableData() {    // count items and initialize directions accordingly
+    TimetableData() {
+        // find out which day is in Rome now and store it as today
+        if(today==null) {
+            Time today = new Time();
+            today.setToNow();
+            TimeZone userTimezone = TimeZone.getDefault(),
+                     romeTimezone = TimeZone.getTimeZone("Europe/Rome");
+            mTimezoneOffsetSec = (userTimezone.getRawOffset() - romeTimezone.getRawOffset()) / 1000;
+            if(mTimezoneOffsetSec != 0) {
+                today.switchTimezone("Europe/Rome");    // today in Rome is this day
+//                Log.v(TAG, "Switched: " + today.toString()+
+//                        "  mTimezoneOffsetHour: " + (String.valueOf(mTimezoneOffsetSec/3600)));
+                // TODO: move to pop-up 'Now in Rome' panel and update by timer
+                Time now = new Time();
+                now.setToNow();
+//                now.switchTimezone("Europe/Rome");      // now in Rome
+                DateFormat df = DateFormat.getTimeInstance(DateFormat.SHORT, Locale.ITALY);
+                Log.v(TAG, "Local: " + df.format(new Date(now.toMillis(false))));
+                df.setTimeZone(TimeZone.getTimeZone("Europe/Rome"));
+                Log.v(TAG, "Rome: " + df.format(new Date(now.toMillis(false))));
+//                Log.v(TAG, now.hour+":"+now.minute);
+                ////////////////////////////////////////////////////////////////
+            }
+            today.set(0,0,0,today.monthDay, today.month, today.year);   // today in Rome
+            Log.v(TAG, today.toString());
+        }
+        // count items and initialize directions accordingly
         for (TimetableItem item : itemsToRome) {
             item.setDirection(Direction.FCOToRome);
             cntToRome++;
