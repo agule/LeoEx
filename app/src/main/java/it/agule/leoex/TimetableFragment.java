@@ -10,8 +10,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -75,6 +78,15 @@ public class TimetableFragment extends Fragment {
         mTimetableAdapter = new ArrayAdapter<String>(getActivity(),
                 R.layout.timetable_item, R.id.list_item_timetable, strListData);
         mListViewTimetable.setAdapter(mTimetableAdapter);
+
+        mListViewTimetable.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                String itemText = mTimetableAdapter.getItem(position);
+                Toast.makeText(getActivity(), itemText, Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         return rootView;
     }
