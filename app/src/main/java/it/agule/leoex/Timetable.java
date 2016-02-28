@@ -43,29 +43,48 @@ enum TrainType{
 class TimetableItem{
     private final String TAG = TimetableItem.class.getSimpleName();
     private Direction direction;
-    private String  departure;
-    private String  arrival;
+    private Time    departureTime;          // TODO: Time is deprecated, should be updated to Date(?)
+    private Time    arrivalTime;
     EndStation      endStation;
-    private String  tripDuration;
+    private int     tripDurationMin;
     private TrainType trainType;
     private int     trainNumber;
     private int     ticketCost;
     private int     ticket1stClass;
+
     TimetableItem(String departure, String arrival, EndStation endStation, String tripDuration,
                   TrainType trainType, int trainNumber, int ticketCost, int ticket1stClass){
-        this.departure=departure; this.arrival=arrival; this.endStation=endStation; this.tripDuration=tripDuration;
+        departureTime = new Time();
+        int hour = Integer.parseInt(departure.substring(0,2)), min  = Integer.parseInt(departure.substring(3));
+        departureTime.set(0, min, hour, 1, 3, 2016);    // bogus date, to be updated later
+        arrivalTime = new Time();
+        hour = Integer.parseInt(arrival.substring(0,2)); min = Integer.parseInt(arrival.substring(3));
+        arrivalTime.set(0,  min, hour, 1, 3, 2016);    // bogus date, to be updated later
+        hour = Integer.parseInt(tripDuration.substring(0,2)); min = Integer.parseInt(tripDuration.substring(3));
+        this.endStation=endStation;
+        tripDurationMin = hour * 60 + min;
         this.trainType=trainType; this.trainNumber=trainNumber; this.ticketCost=ticketCost; this.ticket1stClass=ticket1stClass;
     }
-    void setDirection(Direction dir){direction=dir;}
+    void setDateDirection(Direction dir) {
+        direction = dir;
+        if (TimetableData.today == null){
+            Log.e(TAG, "TimetableData.today == null");
+        }else{
+            departureTime.set(0, departureTime.minute, departureTime.hour,
+                    TimetableData.today.monthDay, TimetableData.today.month, TimetableData.today.year);
+            arrivalTime.set  (0, arrivalTime.minute,   arrivalTime.hour,
+                    TimetableData.today.monthDay, TimetableData.today.month, TimetableData.today.year);
+        }
+    }
     @Override
     public String toString(){   // R22001 \n 05:57 ✈Fiumicino → Roma Tiburtina (06:45) [8€]
         String str = trainType.code()+String.valueOf(trainNumber)+"\n";
-        str += departure+" ";
+        str+=TimetableData.dateFormat.format(new Date(departureTime.toMillis(false)))+" ";
         if(Direction.FCOToRome==direction)
             str+= EndStation.FCOapt.Name()+" → "+endStation.Name();
         else if(Direction.RomeToFCO==direction)
             str+= endStation.Name()+" → "+EndStation.FCOapt.Name();
-        str+=" ("+arrival+") ";
+        str+= " (" + TimetableData.dateFormat.format(new Date(arrivalTime.toMillis(false))) +" ";
         str+=" ["+String.valueOf(ticketCost)+"€";
         if(ticket1stClass>0)
             str+="/"+String.valueOf(ticket1stClass)+"€";
@@ -160,13 +179,18 @@ class TimetableData {
             new TimetableItem("08:05", "08:37", EndStation.RomaTer, "00:32", TrainType.LE, 3250, 14, 0)
     };
     int cntToFCO = 0;
+    static DateFormat dateFormat = null;
     static Time today = null;
     int mTimezoneOffsetSec = 0;
 
     TimetableData() {
+        if(dateFormat==null){
+            dateFormat = DateFormat.getTimeInstance(DateFormat.SHORT, Locale.ITALY);
+            dateFormat.setTimeZone(TimeZone.getTimeZone("Europe/Rome"));
+        }
         // find out which day is in Rome now and store it as today
         if(today==null) {
-            Time today = new Time();
+            today = new Time();
             today.setToNow();
 //            Log.v(TAG, "Today/now:" + today.toString());
             TimeZone userTimezone = TimeZone.getDefault(),
@@ -179,11 +203,7 @@ class TimetableData {
                 // TODO: move to pop-up 'Now in Rome' panel and update by timer
                 Time now = new Time();
                 now.setToNow();
-//                now.switchTimezone("Europe/Rome");      // now in Rome
-                DateFormat df = DateFormat.getTimeInstance(DateFormat.SHORT, Locale.ITALY);
-                Log.v(TAG, "Local: " + df.format(new Date(now.toMillis(false))));
-                df.setTimeZone(TimeZone.getTimeZone("Europe/Rome"));
-                Log.v(TAG, "Rome: " + df.format(new Date(now.toMillis(false))));
+                Log.v(TAG, "Time in Rome: " + dateFormat.format(new Date(now.toMillis(false))));
 //                Log.v(TAG, now.hour+":"+now.minute);
                 ////////////////////////////////////////////////////////////////
             }
@@ -191,11 +211,11 @@ class TimetableData {
         }
         // count items and initialize directions accordingly
         for (TimetableItem item : itemsToRome) {
-            item.setDirection(Direction.FCOToRome);
+            item.setDateDirection(Direction.FCOToRome);
             cntToRome++;
         }
         for (TimetableItem item : itemsToFCO) {
-            item.setDirection(Direction.RomeToFCO);
+            item.setDateDirection(Direction.RomeToFCO);
             cntToFCO++;
         }
     }
