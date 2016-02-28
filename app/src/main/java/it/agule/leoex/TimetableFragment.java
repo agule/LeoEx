@@ -1,9 +1,9 @@
 package it.agule.leoex;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -42,7 +42,7 @@ public class TimetableFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.timetable_menu, menu);
+        inflater.inflate(R.menu.menu_timetable, menu);
     }
 
     @Override
@@ -83,7 +83,10 @@ public class TimetableFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 String itemText = mTimetableAdapter.getItem(position);
-                Toast.makeText(getActivity(), itemText, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), itemText, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), DetailActivity.class)
+                                            .putExtra(Intent.EXTRA_TEXT, itemText);
+                startActivity(intent);
             }
         });
 
