@@ -168,6 +168,7 @@ class TimetableData {
         if(today==null) {
             Time today = new Time();
             today.setToNow();
+//            Log.v(TAG, "Today/now:" + today.toString());
             TimeZone userTimezone = TimeZone.getDefault(),
                      romeTimezone = TimeZone.getTimeZone("Europe/Rome");
             mTimezoneOffsetSec = (userTimezone.getRawOffset() - romeTimezone.getRawOffset()) / 1000;
@@ -186,8 +187,7 @@ class TimetableData {
 //                Log.v(TAG, now.hour+":"+now.minute);
                 ////////////////////////////////////////////////////////////////
             }
-            today.set(0,0,0,today.monthDay, today.month, today.year);   // today in Rome
-            Log.v(TAG, today.toString());
+            today.set(0, 0, 0, today.monthDay, today.month, today.year);   // today in Rome
         }
         // count items and initialize directions accordingly
         for (TimetableItem item : itemsToRome) {
