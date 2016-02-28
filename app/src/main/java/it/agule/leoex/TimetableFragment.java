@@ -61,12 +61,15 @@ public class TimetableFragment extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 
-    // TODO: to be moved to another message, which would scroll ListView on opening
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    // TODO: to be moved to another message, which would scroll ListView on opening
+    public void onStart() {
+        super.onStart();
         if(mListViewTimetable!=null)
-            mListViewTimetable.smoothScrollToPosition(mTimetableAdapter.getPosition("R22011"));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+                mListViewTimetable.smoothScrollToPositionFromTop(mTimetable.getItemBeforeNow(), 10);
+            else    // older functions only ensures item is visible, but may be at bottom
+                mListViewTimetable.smoothScrollToPosition(mTimetable.getItemBeforeNow());
     }
 
     @Override
