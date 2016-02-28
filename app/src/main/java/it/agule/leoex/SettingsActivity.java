@@ -95,15 +95,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     };
 
     /**
-     * Helper method to determine if the device has an extra-large screen. For
-     * example, 10" tablets are extra-large.
-     */
-    private static boolean isXLargeTablet(Context context) {
-        return (context.getResources().getConfiguration().screenLayout
-                & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_XLARGE;
-    }
-
-    /**
      * Determines whether the simplified settings UI should be shown. This is
      * true if this is forced via {@link #ALWAYS_SIMPLE_PREFS}, or the device
      * doesn't have newer APIs like {@link PreferenceFragment}, or the device
@@ -112,8 +103,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
      */
     private static boolean isSimplePreferences(Context context) {
         return ALWAYS_SIMPLE_PREFS
-                || Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB
-                || !isXLargeTablet(context);
+                || Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB;
     }
 
     /**
@@ -208,14 +198,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         bindPreferenceSummaryToValue(findPreference("example_list"));
         bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
         bindPreferenceSummaryToValue(findPreference("sync_frequency"));
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean onIsMultiPane() {
-        return isXLargeTablet(this) && !isSimplePreferences(this);
     }
 
     /**
