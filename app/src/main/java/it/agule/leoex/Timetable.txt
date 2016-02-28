@@ -1,3 +1,29 @@
+Timetable for 1 March 2016, see www.TrenItalia.com
+===========================
+Roma --> Fiumicino Aeroporto
+----------------------------
+Departure   From:           Arrival To:             	Duration    Train   Train#  Cost,€  1st class
+  05:01		Roma Tiburtina	05:48	Fiumicino Aeroporto	 00:47	 	Reg		21996	8,00	-
+  05:35		Roma Termini	06:07	Fiumicino Aeroporto	 00:32		LeoEx	 3230	14,00	-
+  05:46		Roma Tiburtina	06:33	Fiumicino Aeroporto  00:47	 	Reg		22000	8,00	-
+  05:47		Roma Ostiense	06:18	Fiumicino Aeroporto	 00:31		Regio	21998 	8,00 
+  06:01		Roma Tiburtina	06:48	Fiumicino Aeroporto	 00:47		Regio	22002 	8,00 
+  06:05		Roma Termini	06:37	Fiumicino Aeroporto	 00:32		Expre	3234 	14,00 
+  06:16		Roma Tiburtina	07:03	Fiumicino Aeroporto	 00:47		Regio	22004 	8,00 
+  06:31		Roma Tiburtina	07:18	Fiumicino Aeroporto	 00:47		Regio	22006 	8,00 
+  06:35		Roma Termini	07:07	Fiumicino Aeroporto	 00:32		Expre	3238 	14,00 
+  06:46		Roma Tiburtina	07:33	Fiumicino Aeroporto	 00:47		Regio	22008 	8,00 
+  07:01		Roma Tiburtina	07:48	Fiumicino Aeroporto	 00:47		Regio	22010 	8,00 
+  07:05		Roma Termini	07:37	Fiumicino Aeroporto	 00:32		Expre	3242 	14,00 
+  07:16		Roma Tiburtina	08:03	Fiumicino Aeroporto	 00:47		Regio	22012 	8,00 
+  07:31		Roma Tiburtina	08:18	Fiumicino Aeroporto	 00:47		Regio	22014 	8,00 
+  07:35		Roma Termini	08:07	Fiumicino Aeroporto	 00:32		Expre	3246 	14,00 
+  07:46		Roma Tiburtina	08:33	Fiumicino Aeroporto	 00:47		Regio	22016 	8,00 
+  08:01		Roma Tiburtina	08:48	Fiumicino Aeroporto	 00:47		Regio	22018 	8,00 
+  08:05		Roma Termini	08:37	Fiumicino Aeroporto	 00:32		Expre	3250 	14,00 
+...
+
+
 Fiumicino Aeroporto --> Roma
 ----------------------------
 Departure   From:               Arrival To:             Duration    Train   Train#  Cost,€  1st class
@@ -42,26 +68,80 @@ Departure   From:               Arrival To:             Duration    Train   Trai
   11:53		Fiumicino Aeroporto	 12:25	Roma Termini	 00:32		Expre	3275 	14,00 
   11:57		Fiumicino Aeroporto	 12:45	Roma Tiburtina	 00:48		Regio	22047 	8,00 
 ...
-
-Roma --> Fiumicino Aeroporto
-----------------------------
-Departure   From:           Arrival To:             	Duration    Train   Train#  Cost,€  1st class
-  05:01		Roma Tiburtina	05:48	Fiumicino Aeroporto	 00:47	 	Reg		21996	8,00	-
-  05:35		Roma Termini	06:07	Fiumicino Aeroporto	 00:32		LeoEx	 3230	14,00	-
-  05:46		Roma Tiburtina	06:33	Fiumicino Aeroporto  00:47	 	Reg		22000	8,00	-
-  05:47		Roma Ostiense	06:18	Fiumicino Aeroporto	 00:31		Regio	21998 	8,00 
-  06:01		Roma Tiburtina	06:48	Fiumicino Aeroporto	 00:47		Regio	22002 	8,00 
-  06:05		Roma Termini	06:37	Fiumicino Aeroporto	 00:32		Expre	3234 	14,00 
-  06:16		Roma Tiburtina	07:03	Fiumicino Aeroporto	 00:47		Regio	22004 	8,00 
-  06:31		Roma Tiburtina	07:18	Fiumicino Aeroporto	 00:47		Regio	22006 	8,00 
-  06:35		Roma Termini	07:07	Fiumicino Aeroporto	 00:32		Expre	3238 	14,00 
-  06:46		Roma Tiburtina	07:33	Fiumicino Aeroporto	 00:47		Regio	22008 	8,00 
-  07:01		Roma Tiburtina	07:48	Fiumicino Aeroporto	 00:47		Regio	22010 	8,00 
-  07:05		Roma Termini	07:37	Fiumicino Aeroporto	 00:32		Expre	3242 	14,00 
-  07:16		Roma Tiburtina	08:03	Fiumicino Aeroporto	 00:47		Regio	22012 	8,00 
-  07:31		Roma Tiburtina	08:18	Fiumicino Aeroporto	 00:47		Regio	22014 	8,00 
-  07:35		Roma Termini	08:07	Fiumicino Aeroporto	 00:32		Expre	3246 	14,00 
-  07:46		Roma Tiburtina	08:33	Fiumicino Aeroporto	 00:47		Regio	22016 	8,00 
-  08:01		Roma Tiburtina	08:48	Fiumicino Aeroporto	 00:47		Regio	22018 	8,00 
-  08:05		Roma Termini	08:37	Fiumicino Aeroporto	 00:32		Expre	3250 	14,00 
-		
+  12:08		Fiumicino Aeroporto  12:40  Roma Termini	 00:32		Express	3277	14,00
+  12:12		Fiumicino Aeroporto  13:00	Roma Tiburtina   00:48		Regio	22049	 8,00
+  12:23		Fiumicino Aeroporto  12:55	Roma Termini   	 00:32		Expre	3279	 14,00
+  12:27		Fiumicino Aeroporto  13:15	Roma Tiburtina   00:48		Regio	22051	 8,00
+  12:38		Fiumicino Aeroporto  13:10	Roma Termini     00:32		Expre	3281	 14,00
+  12:42		Fiumicino Aeroporto  13:30	Roma Tiburtina   00:48		Regio	22053	 8,00
+  12:53		Fiumicino Aeroporto  13:25	Roma Termini     00:32		Expre	3283	 14,00
+  12:57		Fiumicino Aeroporto  13:45	Roma Tiburtina   00:48		Regio	22055	 8,00
+  13:08		Fiumicino Aeroporto  13:40	Roma Termini     00:32		Expre	3285	 14,00
+  13:12		Fiumicino Aeroporto  14:00	Roma Tiburtina   00:48		Regio	22057	 8,00
+  13:23		Fiumicino Aeroporto  13:55	Roma Termini     00:32		Expre	3287	 14,00
+  13:27		Fiumicino Aeroporto  14:15	Roma Tiburtina   00:48		Regio	22059	 8,00
+  13:38		Fiumicino Aeroporto  14:10	Roma Termini     00:32		Expre	3289	 14,00
+  13:42		Fiumicino Aeroporto  14:30	Roma Tiburtina   00:48		Regio	22061	 8,00
+  13:53		Fiumicino Aeroporto  14:25	Roma Termini     00:32		Expre	3291	 14,00
+  13:57		Fiumicino Aeroporto  14:45	Roma Tiburtina   00:48		Regio	22063	 8,00
+  14:12		Fiumicino Aeroporto  15:00	Roma Tiburtina   00:48		Regio	22065	 8,00
+  14:23		Fiumicino Aeroporto  14:55	Roma Termini     00:32		Expre	3295	 14,00
+  14:27		Fiumicino Aeroporto  15:15	Roma Tiburtina   00:48		Regio	22067	 8,00
+  14:42		Fiumicino Aeroporto  15:30	Roma Tiburtina   00:48		Regio	22069	 8,00
+  14:53		Fiumicino Aeroporto  15:25	Roma Termini     00:32		Expre	3299	 14,00
+  14:57		Fiumicino Aeroporto  15:45	Roma Tiburtina   00:48		Regio	22071	 8,00
+  15:08		Fiumicino Aeroporto  15:40	Roma Termini     00:32		Frecc	9493	 18,00	21,00 €
+  15:12		Fiumicino Aeroporto  16:00	Roma Tiburtina   00:48		Regio	22073	 8,00
+  15:23		Fiumicino Aeroporto  15:55	Roma Termini     00:32		Expre	3303	 14,00
+  15:27		Fiumicino Aeroporto  16:15	Roma Tiburtina   00:48		Regio	22075	 8,00
+  15:38		Fiumicino Aeroporto  16:10	Roma Termini     00:32		Expre	3305	 14,00
+  15:42		Fiumicino Aeroporto  16:30	Roma Tiburtina   00:48		Regio	22077	 8,00
+  15:53		Fiumicino Aeroporto  16:25	Roma Termini     00:32		Expre	3307	 14,00
+  15:57		Fiumicino Aeroporto  16:45	Roma Tiburtina   00:48		Regio	22079	 8,00
+  16:08		Fiumicino Aeroporto  16:40	Roma Termini     00:32		Expre	3309	 14,00
+  16:12		Fiumicino Aeroporto  17:00	Roma Tiburtina   00:48		Regio	22081	 8,00
+  16:23		Fiumicino Aeroporto  16:55	Roma Termini     00:32		Expre	3311	 14,00
+  16:27		Fiumicino Aeroporto  17:15	Roma Tiburtina   00:48		Regio	22083	 8,00
+  16:38		Fiumicino Aeroporto  17:10	Roma Termini     00:32		Expre	3313	 14,00
+  16:42		Fiumicino Aeroporto  17:30	Roma Tiburtina   00:48		Regio	22085	 8,00
+  16:53		Fiumicino Aeroporto  17:25	Roma Termini     00:32		Expre	3315	 14,00
+  16:57		Fiumicino Aeroporto  17:45	Roma Tiburtina   00:48		Regio	22087	 8,00
+  17:08		Fiumicino Aeroporto  17:40	Roma Termini     00:32		Expre	3317	 14,00
+  17:12		Fiumicino Aeroporto  18:00	Roma Tiburtina   00:48		Regio	22089	 8,00
+  17:23		Fiumicino Aeroporto  17:55	Roma Termini     00:32		Expre	3319	 14,00
+  17:27		Fiumicino Aeroporto  18:15	Roma Tiburtina   00:48		Regio	22091	 8,00
+  17:38		Fiumicino Aeroporto  18:10	Roma Termini     00:32		Expre	3321	 14,00
+  17:42		Fiumicino Aeroporto  18:30	Roma Tiburtina   00:48		Regio	22093	 8,00
+  17:53		Fiumicino Aeroporto  18:25	Roma Termini     00:32		Expre	3323	 14,00
+  17:57		Fiumicino Aeroporto  18:45	Roma Tiburtina   00:48		Regio	22095	 8,00
+  18:08		Fiumicino Aeroporto  18:40	Roma Termini     00:32		Expre	3325	 14,00
+  18:12		Fiumicino Aeroporto  19:00	Roma Tiburtina   00:48		Regio	22097	 8,00
+  18:23		Fiumicino Aeroporto  18:55	Roma Termini     00:32		Expre	3327	 14,00
+  18:27		Fiumicino Aeroporto  19:15	Roma Tiburtina   00:48		Regio	22099	 8,00
+  18:38		Fiumicino Aeroporto  19:10	Roma Termini     00:32		Expre	3329	 14,00
+  18:42		Fiumicino Aeroporto  19:30	Roma Tiburtina   00:48		Regio	22101	 8,00
+  18:53		Fiumicino Aeroporto  19:25	Roma Termini     00:32		Expre	3331	 14,00
+  18:57		Fiumicino Aeroporto  19:45	Roma Tiburtina   00:48		Regio	22103	 8,00
+  19:08		Fiumicino Aeroporto  19:40	Roma Termini     00:32		Expre	3333	 14,00
+  19:12		Fiumicino Aeroporto  20:00	Roma Tiburtina   00:48		Regio	22105	 8,00
+  19:23		Fiumicino Aeroporto  19:55	Roma Termini     00:32		Expre	3335	 14,00
+  19:27		Fiumicino Aeroporto  20:15	Roma Tiburtina   00:48		Regio	22107	 8,00
+  19:38		Fiumicino Aeroporto  20:10	Roma Termini     00:32		Expre	3337	 14,00
+  19:42		Fiumicino Aeroporto  20:30	Roma Tiburtina   00:48		Regio	22109	 8,00
+  19:53		Fiumicino Aeroporto  20:25	Roma Termini     00:32		Expre	3339	 14,00
+  19:57		Fiumicino Aeroporto  20:45	Roma Tiburtina   00:48		Regio	22111	 8,00
+  20:08		Fiumicino Aeroporto  20:40	Roma Termini     00:32		Expre	3341	 14,00
+  20:12		Fiumicino Aeroporto  21:00	Roma Tiburtina   00:48		Regio	22113	 8,00
+  20:23		Fiumicino Aeroporto  20:55	Roma Termini     00:32		Expre	3343	 14,00
+  20:42		Fiumicino Aeroporto  21:30	Roma Tiburtina   00:48		Regio	22115	 8,00
+  20:53		Fiumicino Aeroporto  21:25	Roma Termini     00:32		Expre	3347	 14,00
+  21:12		Fiumicino Aeroporto  22:00	Roma Tiburtina   00:48		Regio	22117	 8,00
+  21:23		Fiumicino Aeroporto  21:55	Roma Termini     00:32		Expre	3351	 14,00
+  21:42		Fiumicino Aeroporto  22:30	Roma Tiburtina   00:48		Regio	22119	 8,00
+  21:53		Fiumicino Aeroporto  22:25	Roma Termini     00:32		Expre	3355	 14,00
+  22:12		Fiumicino Aeroporto  23:00	Roma Tiburtina   00:48		Regio	22121	 8,00
+  22:23		Fiumicino Aeroporto  22:55	Roma Termini     00:32		Expre	3359	 14,00
+  22:42		Fiumicino Aeroporto  23:30	Roma Tiburtina   00:48		Regio	22123	 8,00
+  22:53		Fiumicino Aeroporto  23:25	Roma Termini     00:32		Expre	3363	 14,00
+  23:23		Fiumicino Aeroporto  23:55	Roma Termini     00:32		Expre	3367	 14,00
+  23:27		Fiumicino Aeroporto  23:59	Roma Ostiense     00:32		Regio	22125	 8,00
