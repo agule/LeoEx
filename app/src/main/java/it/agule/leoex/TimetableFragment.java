@@ -63,8 +63,8 @@ public class TimetableFragment extends Fragment {
 
     @Override
     // TODO: to be moved to another message, which would scroll ListView on opening
-    public void onStart() {
-        super.onStart();
+    public void onResume() {
+        super.onResume();
         if(mListViewTimetable!=null)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
                 mListViewTimetable.smoothScrollToPositionFromTop(mTimetable.getItemBeforeNow(), 10);
