@@ -101,9 +101,9 @@ public class Timetable{     // public interface class
     Timetable(){    timetableData = new TimetableData();    }
 
     String[] getTimetableStrings() {
-        String[] stringsArray = new String[timetableData.cntToRome];
-        for(int i = 0; i < timetableData.cntToRome; i++){
-            stringsArray[i] = timetableData.itemsToRome[i].toString();
+        String[] stringsArray = new String[timetableData.cntToFCO];
+        for(int i = 0; i < timetableData.cntToFCO; i++){
+            stringsArray[i] = timetableData.itemsToFCO[i].toString();
         }
         return stringsArray;
     }
@@ -113,8 +113,8 @@ public class Timetable{     // public interface class
 //        Log.v(TAG, "Now: " + now.toString());
 //        Log.v(TAG, "Now in Rome: " + TimetableData.dateFormat.format(new Date(now.toMillis(false))));
         int i;
-        for(i = 0; i < timetableData.cntToRome; i++){
-            if(timetableData.itemsToRome[i].departureTime.after(now))
+        for(i = 0; i < timetableData.cntToFCO; i++){
+            if(timetableData.itemsToFCO[i].departureTime.after(now))
                 break;
         }
 //        Log.v(TAG, "TimetableItem ID after now: " + String.valueOf(i));
@@ -249,7 +249,6 @@ class TimetableData {
     };
     int cntToRome = 0;
     static TimetableItem[] itemsToFCO = {     // Direction.RomeToFCO
-            new TimetableItem("05:57", "06:45", EndStation.RomaTib, "00:48", TrainType.Reg, 22001, 8, 0),
             new TimetableItem("05:01", "05:48", EndStation.RomaTib, "00:47", TrainType.Reg, 21996, 8, 0),
             new TimetableItem("05:35", "06:07", EndStation.RomaTer, "00:32", TrainType.LE,  3230, 14, 0),
             new TimetableItem("05:46", "06:33", EndStation.RomaTib, "00:47", TrainType.Reg, 22000, 8, 0),
