@@ -33,6 +33,15 @@ public class TimetableFragment extends Fragment {
     public TimetableFragment() {
     }
 
+    private void ScrollToNextTrain(){
+        if(mListViewTimetable!=null)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+                mListViewTimetable.smoothScrollToPositionFromTop(mTimetable.getItemBeforeNow(), 10);
+            else    // older functions only ensures item is visible, but may be at bottom
+                mListViewTimetable.smoothScrollToPosition(mTimetable.getItemBeforeNow());
+
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,13 +60,8 @@ public class TimetableFragment extends Fragment {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_scroll) {
-            if(mListViewTimetable!=null)
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-                    mListViewTimetable.smoothScrollToPositionFromTop(mTimetable.getItemBeforeNow(), 10);
-                else    // older functions only ensures item is visible, but may be at bottom
-                    mListViewTimetable.smoothScrollToPosition(mTimetable.getItemBeforeNow());
-        }
+        if (id == R.id.action_scroll)
+            ScrollToNextTrain();
         return super.onOptionsItemSelected(item);
     }
 
@@ -65,11 +69,7 @@ public class TimetableFragment extends Fragment {
     // TODO: to be moved to another message, which would scroll ListView on opening
     public void onResume() {
         super.onResume();
-        if(mListViewTimetable!=null)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-                mListViewTimetable.smoothScrollToPositionFromTop(mTimetable.getItemBeforeNow(), 10);
-            else    // older functions only ensures item is visible, but may be at bottom
-                mListViewTimetable.smoothScrollToPosition(mTimetable.getItemBeforeNow());
+        ScrollToNextTrain();
     }
 
     @Override
