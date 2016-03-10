@@ -4,6 +4,10 @@
     <string name="action_scroll" translatable="false">Scroll</string>
     <string name="title_activity_detail">Detail</string>
     <string name="hello_world">Text...</string>
+
+    <string name="strButtonXchange">&lt;&#8212;&gt;</string>
+    <string name="strButtonSearch">o&#8211;</string>
+
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
@@ -61,6 +65,5 @@
 
     <string name="pref_title_ringtone">Ringtone</string>
     <string name="pref_ringtone_silent">Silent</string>
-
     <string name="pref_title_vibrate">Vibrate</string>
 </resources>
