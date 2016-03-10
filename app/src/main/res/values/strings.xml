@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">LeoEx</string>
-    <string name="action_settings">Settings</string>
-    <string name="action_scroll" translatable="false">Scroll</string>
-    <string name="title_activity_detail">Detail</string>
-    <string name="hello_world">Text...</string>
+    <string name="app_name">Trains Rome–Fiumicino ✈</string>
+    <string name="action_settings">About</string>
+    <string name="action_scroll" translatable="false">Find Next</string>
+    <string name="title_activity_detail">Details</string>
+    <string name="hello_world">Sample Text...</string>
 
-    <string name="strButtonXchange">&lt;&#8212;&gt;</string>
-    <string name="strButtonSearch">o&#8211;</string>
+    <string name="strButtonXchange">↔</string>
+    <string name="strButtonSearch">o–</string>
 
-    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings">About</string>
 
     <!-- Strings related to Settings -->
 

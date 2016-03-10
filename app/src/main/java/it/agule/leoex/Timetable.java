@@ -30,7 +30,7 @@ enum EndStation{
 
 enum TrainType{
     Reg ("R", "Regionale"),
-    LE  ("LE","Leonardo LEress"),
+    LE  ("LE","Leonardo Express"),
     FA  ("FA","FrecciArgento");
 
     private String code;
