@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageViewLogo"
         android:layout_gravity="center_horizontal"
-        android:src="@mipmap/ic_launcher"
+        android:src="@mipmap/logo"
         android:padding="32dp" />
 
     <TextView
@@ -34,7 +34,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is a simple App to display trains timetable between the city of Rome and international airport ✈ Fiumicino [FCO]."
+        android:text="This is a simple App to display trains timetable between the city of Rome and international airport ✈ Fiumicino [FCO].\n\nFind Next scrolls the list to next train departure; times are displayed in Rome time zone regardless of your device settings.\n\nIt's initial alpha version, App will develop fast; please send your feedback on which function you need sooner.\n Cheers!"
         android:id="@+id/textViewDescr"
         android:layout_gravity="center_horizontal"
         android:paddingLeft="64dp"
