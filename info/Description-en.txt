@@ -1,0 +1,7 @@
+This is a simple App to display trains timetable between the city of Rome and international airport Fiumicino [FCO].
+
+Find Next scrolls the list to next train departure; times are displayed in Rome time zone regardless of your device settings.
+
+It's initial alpha version, App will develop fast; please send your feedback on which function you need sooner.
+
+Cheers!

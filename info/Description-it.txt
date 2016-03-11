@@ -1,0 +1,7 @@
+﻿Questa App contiene l'orario dei treni tra Roma ed aeroporto internazionale Fiumicino [FCO].
+
+Trova Prox trova prossima partenze nell'elenco; orari sono sempre fuso a Roma, qualunqe siano impostazion dal tuo dispositivo.
+
+Questa è la prima versione alfa, App sta svilupando, aspetti i nuovi Update; scrivimi quale funzione ti servirebbe svilupata prima.
+
+Ciao!
