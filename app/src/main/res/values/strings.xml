@@ -9,6 +9,9 @@
     <string name="strButtonSearch">o–</string>
 
     <string name="title_activity_settings">About</string>
+    <string name="aboutAppName">Trains Rome–Fiumicino [FCO]</string>
+    <string name="aboutAppVersion">ver. 0.1 alpha</string>
+    <string name="aboutAppDescr">This is a simple App to display trains timetable between the city of Rome and international airport ✈ Fiumicino [FCO].\n\nFind Next scrolls the list to next train departure; times are displayed in Rome time zone regardless of your device settings.\n\nIt\'s initial alpha version, App will develop fast; please send your feedback on which function you need sooner.\nCheers!</string>
 
     <!-- Strings related to Settings -->
 
@@ -66,4 +69,5 @@
     <string name="pref_title_ringtone">Ringtone</string>
     <string name="pref_ringtone_silent">Silent</string>
     <string name="pref_title_vibrate">Vibrate</string>
+
 </resources>

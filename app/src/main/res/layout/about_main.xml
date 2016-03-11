@@ -3,43 +3,49 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageViewLogo"
-        android:layout_gravity="center_horizontal"
-        android:src="@mipmap/logo"
-        android:padding="32dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Trains Rome–Fiumicino [FCO]"
-        android:id="@+id/textViewTitle"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="32dp"
-        android:paddingBottom="32dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewLogo"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo"
+            android:padding="32dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="ver. 0.1 alpha"
-        android:id="@+id/textViewVer"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/aboutAppName"
+            android:id="@+id/textViewTitle"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is a simple App to display trains timetable between the city of Rome and international airport ✈ Fiumicino [FCO].\n\nFind Next scrolls the list to next train departure; times are displayed in Rome time zone regardless of your device settings.\n\nIt's initial alpha version, App will develop fast; please send your feedback on which function you need sooner.\n Cheers!"
-        android:id="@+id/textViewDescr"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="64dp"
-        android:paddingRight="64dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/aboutAppVersion"
+            android:id="@+id/textViewVer"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutAppDescr"
+            android:id="@+id/textViewDescr"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+    </ScrollView>
 </LinearLayout>
