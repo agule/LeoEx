@@ -8,14 +8,6 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-/**
- * Actual Timetable data and related types defined here
- */
-
-// direction: from FCO Airport to Rome city and back
-enum Direction{ FCOToRome, RomeToFCO;
-    public static int COUNT = 2;}
-
 // Train end station in Rome
 enum EndStation{
     RomaTer ("Roma Termini"),
@@ -100,22 +92,37 @@ public class Timetable{     // public interface class
 
     Timetable(){    timetableData = new TimetableData();    }
 
-    String[] getTimetableStrings() {
-        String[] stringsArray = new String[timetableData.cntToFCO];
-        for(int i = 0; i < timetableData.cntToFCO; i++){
-            stringsArray[i] = timetableData.itemsToFCO[i].toString();
-        }
-        return stringsArray;
+    String[] getTimetableStrings(Direction direction) {
+        String[] outStrings;
+        if(direction==Direction.RomeToFCO) {
+            outStrings = new String[timetableData.cntToFCO];
+            for(int i = 0; i < timetableData.cntToFCO; i++){
+                outStrings[i] = timetableData.itemsToFCO[i].toString();
+            }
+        }else if(direction==Direction.FCOToRome) {
+            outStrings = new String[timetableData.cntToRome];
+            for(int i = 0; i < timetableData.cntToRome; i++){
+                outStrings[i] = timetableData.itemsToRome[i].toString();
+            }
+        }else outStrings = new String[1];
+        return outStrings;
     }
 
-    int getItemBeforeNow(){
+    int getItemBeforeNow(Direction direction){
         now.setToNow();
 //        Log.v(TAG, "Now: " + now.toString());
 //        Log.v(TAG, "Now in Rome: " + TimetableData.dateFormat.format(new Date(now.toMillis(false))));
-        int i;
-        for(i = 0; i < timetableData.cntToFCO; i++){
-            if(timetableData.itemsToFCO[i].departureTime.after(now))
-                break;
+        int i = 0;
+        if(direction==Direction.RomeToFCO) {
+            for(i = 0; i < timetableData.cntToFCO; i++){
+                if(timetableData.itemsToFCO[i].departureTime.after(now))
+                    break;
+            }
+        }else if(direction==Direction.FCOToRome) {
+            for(i = 0; i < timetableData.cntToRome; i++){
+                if(timetableData.itemsToRome[i].departureTime.after(now))
+                    break;
+            }
         }
 //        Log.v(TAG, "TimetableItem ID after now: " + String.valueOf(i));
         if(i>0) return i-1;

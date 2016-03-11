@@ -20,7 +20,8 @@
             android:text="Medium Text"
             android:id="@+id/textFrom"
             android:layout_gravity="center_vertical"
-            android:layout_weight="4" />
+            android:layout_weight="4"
+            android:gravity="right" />
 
         <Button
             style="?android:attr/buttonStyleSmall"

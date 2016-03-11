@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trains Rome–Fiumicino ✈</string>
+    <string name="app_name">Trains Rome–Fiumicino</string>
     <string name="action_settings">About</string>
     <string name="action_scroll" translatable="false">Find Next</string>
     <string name="title_activity_detail">Details</string>
