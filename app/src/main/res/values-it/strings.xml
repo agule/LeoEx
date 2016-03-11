@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Treni Roma-FCO</string>
+    <string name="action_settings">Info</string>
+    <string name="action_scroll">Trova Prox</string>
+    <string name="title_activity_detail">Dettagli</string>
+
+    <string name="strButtonXchange">↔</string>
+    <string name="strButtonSearch">o–</string>
+
+    <string name="title_activity_settings">Informazione</string>
+    <string name="aboutAppName">Treni Roma–Fiumicino [FCO]</string>
+    <string name="aboutAppVersion">ver. 0.1 alfa</string>
+    <string name="aboutAppDescr">Questa App contiene l\'orario dei treni tra Roma ed aeroporto internazionale ✈ Fiumicino [FCO].\n\nTrova Prox trova prossima partenze nell\'elenco; orari sono sempre fuso a Rome, qualunqe siano impostazione dal tuo dispositivo.\n\nQuesta è la prima versione alfa, App sta svilupando, aspetti nuovi Update; scrivimi quale funzione ti servirebbe svilupata prima.\nCiao!</string>
+
+</resources>
