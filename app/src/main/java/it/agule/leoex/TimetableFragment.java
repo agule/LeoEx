@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,9 +32,9 @@ public class TimetableFragment extends Fragment {
     private ListView mListViewTimetable;
     private Direction currentDirection;
     private TextView mTextViewFrom;
-    private Button mButtonXchange;
+    private ImageButton mButtonXchange;
     private TextView mTextViewTo;
-    private Button mButtonSearch;
+    private ImageButton mButtonSearch;
 
     Timetable mTimetable = new Timetable();
 
@@ -104,7 +105,7 @@ public class TimetableFragment extends Fragment {
 
         mTextViewFrom = (TextView)rootView.findViewById(R.id.textFrom);
         mTextViewFrom.setText(Direction.FCOToRome.Name());
-        mButtonXchange = (Button)rootView.findViewById(R.id.buttonXchange);
+        mButtonXchange = (ImageButton)rootView.findViewById(R.id.buttonXchange);
         mButtonXchange.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,7 +117,7 @@ public class TimetableFragment extends Fragment {
         mTextViewTo   = (TextView)rootView.findViewById(R.id.textTo);
         mTextViewTo.setText(Direction.RomeToFCO.Name());
         currentDirection = Direction.RomeToFCO;
-        mButtonSearch = (Button)rootView.findViewById(R.id.buttonSearch);
+        mButtonSearch = (ImageButton)rootView.findViewById(R.id.buttonSearch);
         mButtonSearch.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {

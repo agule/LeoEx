@@ -1,20 +1,25 @@
 <resources>
+    <!-- App name as displayed -->
     <string name="app_name">Trains Rome-FCO</string>
+
+    <!-- Main Activity buttons -->
+    <string name="descrButtonXchange">Exchange</string>
+    <!-- Main Activity Menu Actions  -->
+    <string name="action_scroll">Find Next</string>
     <string name="action_settings">About</string>
-    <string name="action_scroll" translatable="false">Find Next</string>
+    <!-- Test string -->
+    <string name="hello_world" translatable="false">Sample Text...</string>
+
+    <!-- Details Activity -->
     <string name="title_activity_detail">Details</string>
-    <string name="hello_world">Sample Text...</string>
 
-    <string name="strButtonXchange">↔</string>
-    <string name="strButtonSearch">o–</string>
-
+    <!-- About Activity now replacing Settings -->
     <string name="title_activity_settings">About</string>
     <string name="aboutAppName">Trains Rome–Fiumicino [FCO]</string>
     <string name="aboutAppVersion">ver. 0.1 alpha</string>
     <string name="aboutAppDescr">This is a simple App to display trains timetable between the city of Rome and international airport ✈ Fiumicino [FCO].\n\nFind Next scrolls the list to next train departure; times are displayed in Rome time zone regardless of your device settings.\n\nIt\'s initial alpha version, App will develop fast; please send your feedback on which function you need sooner.\nCheers!</string>
 
     <!-- Strings related to Settings -->
-
     <!-- Example General settings -->
     <string name="pref_header_general">General</string>
 
