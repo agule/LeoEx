@@ -74,9 +74,9 @@ public class TimetableFragment extends Fragment {
     }
 
     @Override
-    // TODO: to be moved to another message, which would scroll ListView on opening
-    public void onResume() {
-        super.onResume();
+    // TODO: should really restore scroll position and not scroll to current time
+    public void onViewStateRestored(Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
         ScrollToNextTrain();
     }
 
